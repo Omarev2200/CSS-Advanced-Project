@@ -6,6 +6,7 @@ h3 {
   font-weight: 600;
   font-size: 30px;
   line-height: 36px;
+  margin: 0em;
 }
 
 h5 {
@@ -537,8 +538,13 @@ li {
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
-  width: 52%;
-  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .header__info .header__second-title p {
+    width: 52%;
+    margin: 0 auto;
+  }
 }
 
 .btn {
@@ -721,9 +727,31 @@ li {
   color: #565656;
 }
 
+@media (min-width: 1200px) {
+  .descriptions__info {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 440px;
+        grid-template-columns: 1fr 440px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .descriptions__descriptions {
+    margin-right: 110px;
+  }
+}
+
 .descriptions__media {
   position: relative;
   margin-top: 32px;
+}
+
+@media (min-width: 1200px) {
+  .descriptions__media {
+    width: 440px;
+    height: 248px;
+  }
 }
 
 .descriptions__media__play__img {
@@ -744,20 +772,24 @@ li {
 }
 
 .descriptions__cart .cart__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content 1fr;
+      grid-template-columns: -webkit-max-content 1fr;
+      grid-template-columns: max-content 1fr;
 }
 
-.descriptions__cart .first {
-  position: relative;
-  margin-bottom: 70px;
+.descriptions__cart .cart__title img {
+  margin-right: 18px;
 }
 
-.descriptions__cart .first img {
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+@media (min-width: 1200px) {
+  .descriptions__cart {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .descriptions__cart .first:not(:last-child)::after {
@@ -768,41 +800,6 @@ li {
   width: 100%;
   position: absolute;
   bottom: -2em;
-}
-
-.descriptions__cart .first,
-.descriptions__cart .second {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-}
-
-.descriptions__cart .first img,
-.descriptions__cart .second img {
-  margin-right: 20px;
-}
-
-.descriptions__cart .first h3,
-.descriptions__cart .second h3 {
-  margin: 0em;
-  width: 80%;
-  color: #565656;
-}
-
-.descriptions__cart .first p,
-.descriptions__cart .second p {
-  color: #565656;
-}
-
-.descriptions__cart .first p a,
-.descriptions__cart .second p a {
-  color: #ff9100;
-  text-decoration: underline;
-  cursor: pointer;
 }
 
 .program {
