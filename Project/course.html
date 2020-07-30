@@ -8,8 +8,8 @@
   </head>
   <body>
     <header class="header">
-        <div class="o-container">
-          <nav class="c-navbar">
+      <nav class="c-navbar">
+        <div class="c-navbar__wrapper o-container">
           <input type="checkbox" id="check" />
           <label for="check" class="c-navbar__checkbtn">
             <img src="/assets/icons/menu.svg" alt="" />
@@ -18,8 +18,14 @@
             <article class="c-navbar__dark-arrow">
               <img src="assets/icons/dark-arrow.svg" alt="dark-arrow" />
             </article>
+            <article class="c-navbar__orange-arrow">
+              <img src="assets/icons/orange-arrow.svg" alt="dark-arrow" />
+            </article>
             <article class="c-navbar__softuni-logo">
               <img src="assets/icons/logo.svg" alt="dark-arrow" />
+            </article>
+            <article class="c-navbar__softuni-destop-logo">
+              <img src="assets/icons/Horizontal-logo.svg" alt="dark-arrow" />
             </article>
           </section>
 
@@ -46,8 +52,8 @@
           <button class="btn btn--secondary">
             вход
           </button>
-        </nav>
-      </div> 
+        </div> 
+      </nav>
       <section class="header__info">
         <article">
           <a class="header__info-title" href="#">Начинаещ</a>
@@ -61,37 +67,38 @@
     <main class="main">
       <div class="o-container">
         <!-- <img class="imiges--container" src="assets/icons/Subtract-mobile.svg" alt=""> -->
-        <section class="recording">
-          
+        <section class="c-recording o-container-recording" >
           <button class="btn btn--recording">записване</button>
-          <article class="recording__money">
-            <img src="/assets/icons/money 1.svg" alt="">
-            <div>
-              <h5 class="recording__title">цена</h5>
-              <span class="recording__info">500 лв.</span>
-            </div>
-          </article>
-          <article class="recording__people">
-            <img src="/assets/icons/people 1.svg" alt="">
-            <div>
-              <h5 class="recording__title">подходящ за</h5>
-              <span class="recording__info">1-6 клас</span>
-            </div>
-          </article>
-          <article class="recording__calendar">
-            <img src="/assets/icons/calendar 1.svg" alt="">
-            <div>
-              <h5 class="recording__title">начало</h5>
-              <span class="recording__info">16 май 2020</span>
-            </div>
-          </article>
-          <article class="recording__location">
-            <img src="/assets/icons/location 1.svg" alt="">
-            <div>
-              <h5 class="recording__title">локация</h5>
-              <span class="recording__info">гр. София</span>
-            </div>
-          </article>
+          <div class="c-recording__items">
+            <article class="c-recording__item">
+              <img src="/assets/icons/money 1.svg" alt="">
+              <div class="o-margin-left24px  test">
+                <h5 class="c-recording__title">цена</h5>
+                <span class="c-recording__info">500 лв.</span>
+              </div>
+            </article>
+            <article class="c-recording__item">
+              <img src="/assets/icons/people 1.svg" alt="">
+              <div class="o-margin-left24px test">
+                <h5 class="c-recording__title">подходящ за</h5>
+                <span class="c-recording__info">1-6 клас</span>
+              </div>
+            </article>
+            <article class="c-recording__item">
+              <img src="/assets/icons/calendar 1.svg" alt="">
+              <div class="o-margin-left24px test">
+                <h5 class="c-recording__title">начало</h5>
+                <span class="c-recording__info">16 май 2020</span>
+              </div>
+            </article>
+            <article class="c-recording__item"> 
+              <img src="/assets/icons/location 1.svg" alt="">
+              <div class="o-margin-left24px test">
+                <h5 class="c-recording__title">локация</h5>
+                <span class="c-recording__info">гр. София</span>
+              </div>
+            </article>
+          </div>
         </section>
 
         <section class="descriptions">

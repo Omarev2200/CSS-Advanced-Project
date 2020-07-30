@@ -1,16 +1,8 @@
 
 .descriptions {
-  margin-top: 170px;
+  margin-top: 0px;
   &__info {
-    p {
-      font-family: "Lato";
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 20px;
-      color: #565656;
-      text-align: left;
-    }
+    color: $grey-700;
   }
   &__media {
     position: relative;

@@ -1,0 +1,78 @@
+.c-recording {
+  position: relative;
+  bottom: 55px;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  height: auto;
+  background-color: $white;
+  box-shadow: $shadow-1dp;
+  border-radius: 12px;
+
+  @include for-desktop-up {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include for-desktop-up {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      align-self: center;
+    }
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+
+    @include for-desktop-up {
+      margin: 0 20px;
+    }
+
+    img {
+      align-self: center;
+    }
+    span {
+      margin-top: 6px;
+      display: flex;
+    }
+  }
+
+  &__title {
+    color: #565656;
+    margin: 0;
+  }
+
+  &__info {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ff9100;
+  }
+
+  article {
+    position: relative;
+    margin-bottom: 50px;
+
+    @include for-desktop-up {
+      margin: 0;
+    }
+  }
+
+  article:not(:last-child):after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 75px;
+    left: 0;
+  }
+}

@@ -24,10 +24,9 @@
   }
 
   .header__second-title {
-    font-family: "Montserrat";
     max-width: 80%;
     margin: 28px auto;
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
@@ -40,6 +39,8 @@
       font-weight: bold;
       font-size: 30px;
       line-height: 36px;
+      width: 52%;
+      margin: 0 auto;
     }
   }
 }
