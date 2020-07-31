@@ -1,0 +1,11 @@
+.o-page-wrapper {
+    display: grid;
+    grid-template-rows: 72px 1fr 567px;
+}
+
+.o-page-content-wrapper {
+    
+    // margin: 0 20px 0 20px;
+    width: 90%;
+    margin: 0 auto;
+}   

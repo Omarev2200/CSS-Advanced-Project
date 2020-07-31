@@ -6,7 +6,6 @@
   background-color: $secondary-800;
   color: $white;
   text-transform: uppercase;
-  margin: 18px 0;
 
   &:hover {
     cursor: pointer;
@@ -15,6 +14,10 @@
   }
 
   &--secondary {
+    width: 82px;
+    height: 36px;
+    margin: 18px 0;
+    align-self: center;
     font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -27,12 +30,13 @@
     margin-right: 24px;
 
     @include for-desktop-up {
-      margin-right: 0;
+        margin-right: 0;
+        margin-left: 32px;
     }
   }
 
-  &--recording {
-    // position: absolute;
+  &--enrollment {
+      position: relative;
     font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -42,12 +46,13 @@
     background: $secondary-800;
     box-shadow: $shadow-4dp;
     border-radius: 100px;
-    padding: 16px 20px;
-    margin-top: 46px;
-    margin-bottom: 82px;
+    padding: 16px 85px;
+    margin: 46px 24px 82px 24px;
+
+    
     @include for-desktop-up {
       padding: 14px 32px;
-      margin:  32px 137px 32px 0;
+      margin: 32px 137px 32px 64px;
     }
   }
 }

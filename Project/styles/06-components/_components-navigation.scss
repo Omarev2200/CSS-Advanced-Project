@@ -1,67 +1,27 @@
-.header {
-  .c-navbar {
-    position: relative;
-    box-shadow: $shadow-2dp;
-    background-color: $white;
+.c-header {
+  box-shadow: $shadow-2dp;
+  position: relative;
+
+  &__navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr min-content;
 
     @include for-desktop-up {
-      .c-navbar {
-        &__wrapper {
-          display: grid;
-          grid-template-columns: max-content 1fr max-content;
-        }
-        &__checkbtn {
-          display: none;
-        }
-
-        &__items {
-          position: relative;
-          top: 0em;
-          left: 0;
-          background: none;
-          display: grid;
-          grid-template-columns: repeat(7,auto);
-          justify-content: end;
-        }
-      }
-    }
-
-    &__wrapper {
-      display: grid;
-      grid-template-columns: 100px 1fr 30px;
-    }
-
-    &__logo {
-      display: flex;
-      flex-flow: row wrap;
-      align-items: center;
-    }
-    &__dark-arrow {
-      margin-right: 14px;
-      @include for-desktop-up {
+      &__checkbtn {
         display: none;
       }
     }
-
-    &__orange-arrow {
-      margin-right: 14px;
+    #check {
       display: none;
-      @include for-desktop-up {
-        display: block;
-      }
     }
 
-    &__softuni-logo{
-      @include for-desktop-up {
-        display: none;
-      }
+    #check:checked ~ .c-header__navbar__items {
+      right: 0%;
     }
 
-    &__softuni-destop-logo {
-      display: none;
-      @include for-desktop-up{
-        display: block;
-      }
+    &__checkbtn {
+      order: 3;
+      align-self: center;
     }
 
     &__items {
@@ -75,7 +35,7 @@
       );
       top: 55px;
       padding-left: 0em;
-      left: -100%;
+      right: -100%;
       text-align: center;
       transition: all 0.5s;
       display: flex;
@@ -83,58 +43,79 @@
       align-items: center;
       justify-content: space-evenly;
       z-index: 1;
+     
+
+      @include for-desktop-up {
+        position: relative;
+        top: 0;
+        left: 0;
+        background: none;
+        display: grid;
+        grid-template-columns: repeat(7, auto);
+        justify-content: end;
+      }
     }
 
     &__item {
       a {
-        font-family: "Lato";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 13px;
-        line-height: 16px;
-        text-transform: uppercase;
         color: #565656;
-
         &:hover {
           cursor: pointer;
           color: $secondary-800;
         }
       }
       @include for-desktop-up {
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        text-transform: uppercase;
         margin-right: 48px;
-        
+
+        &__search {
+          img {
+            display: flex;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
       }
     }
 
-    &__item-search {
-      @include for-desktop-up {
-        display: grid;
-        margin-right: 32px;
-        margin-left: -4px;
-        align-self: center;
-      }
-    }
-
-    &__btn-menu {
-      display: flex;
-      flex-flow: row wrap;
-      align-items: center;
-    }
-    &__checkbtn {
-      order: 3;
+    &__logo {
       display: grid;
+      grid-template-columns: min-content min-content;
+      align-items: center;
 
-      img {
-        align-self: center;
-        justify-self: end;
+      &__orange-arrow {
+        display: none;
+        @include for-desktop-up {
+          display: block;
+          margin-right: 16px;
+        }
+      }
+
+      &__dark-arrow {
+        margin-right: 14px;
+        @include for-desktop-up {
+          display: none;
+        }
+      }
+
+      &__softuni-destop {
+        display: none;
+        @include for-desktop-up {
+          display: block;
+        }
+      }
+
+      &__softuni-mobile {
+        @include for-desktop-up {
+          display: none;
+        }
       }
     }
   }
-  #check {
-    display: none;
-  }
-}
-
-#check:checked ~ .c-navbar__items {
-  left: 0%;
 }

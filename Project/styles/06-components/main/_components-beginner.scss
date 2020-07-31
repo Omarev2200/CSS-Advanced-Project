@@ -1,0 +1,43 @@
+.c-beginner {
+  background-color: $blue-400;
+  color: $white;
+  width: 100%;
+  min-height: 302px;
+  text-align: center;
+
+  &__info {
+    &__label {
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 14px;
+      display: inline-block;
+      background-color: $secondary-500;
+      padding: 4px 8px;
+      box-shadow: $shadow-1dp;
+      border-radius: 4px;
+      text-transform: uppercase;
+      color: $white;
+      margin-top: 64px;
+    }
+
+    &__title {
+      max-width: 80%;
+      margin: 28px auto;
+
+      p {
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 36px;
+        @include for-desktop-up {
+          width: 52%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

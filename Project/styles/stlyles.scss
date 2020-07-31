@@ -1,22 +1,23 @@
 @import "./01-settings/_settings-typography";
-@import "./01-settings/_settings-colors.scss";
-@import "./01-settings/_settings-breakpoints.scss";
+@import "./01-settings/_settings-colors";
+@import "./01-settings/_settings-breakpoints";
 
-@import "./03-generic/_generic-fonts.scss";
-@import "./03-generic/_generic-normalize.scss";
+@import "./03-generic/_generic-fonts";
+@import "./03-generic/generic-normalize";
 
-@import "./04-elements/_elements-body";
-@import "./04-elements/_elements-links.scss";
-@import "./04-elements/_elements-list-items.scss";
+@import "./04-elements/_elements-links";
+@import "./04-elements/_elements-list-items";
 
-@import "./05-objects/_objects-containers.scss";
-@import "./05-objects/objects-containers-recording";
-@import "./05-objects/-objects-distance.scss";
+@import "./05-objects/objects-wrappers";
 
-@import "./06-components/_components-navigation.scss";
-@import "./06-components/_components-header.scss";
-@import "./06-components/_components-buttons.scss";
-@import "./06-components/c-component-recording";
-@import "./06-components/_component-descriptions.scss";
-@import "./06-components/_component-program.scss";
-@import "./06-components/_component-footer.scss";
+@import "./06-components/components-navigation";
+@import "./06-components/components-buttons";
+@import "./06-components/main/components-main";
+@import "./06-components/main/components-beginner";
+@import "./06-components/main/components-enrollment";
+@import "./06-components/main/components-description";
+
+
+
+
+

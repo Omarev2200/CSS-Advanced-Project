@@ -1,0 +1,107 @@
+.c-enrollment {
+   
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    background: radial-gradient(
+        circle 12px,
+        transparent,
+        transparent 30%,
+        #c4c4c4 50%,
+        #fff 60%,
+        #fff 100%
+      )
+      47px 0px/20px 20px repeat-x;
+    top: 134px;
+
+    @include for-desktop-up {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 65px;
+        left: 250px;
+        top: 0;
+        background: radial-gradient(
+            circle 12px,
+            transparent,
+            transparent 30%,
+            #c4c4c4 50%,
+            #fff 60%,
+            #fff 100%
+          )
+          47px -7px/20px 18px repeat-y;
+    }
+  }
+  
+  display: grid;
+  grid-template-columns: 1fr;
+
+  box-shadow: $shadow-1dp;
+  border-radius: 12px;
+  grid-template-rows: repeat(5,auto);
+  position: relative;
+  top: -57px;
+  background-color: $white;
+
+  @include for-desktop-up {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      align-items: center;
+  }
+
+  &__item {
+    @include for-desktop-up {
+        margin: 0 60px 0 0;
+    }
+      position: relative;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    margin: 0 0 50px 24px;
+
+   
+    &:not(:last-child):after {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 2px;
+        background-color: #f1f1f1;
+        position: absolute;
+        top: 75px;
+        
+        @include for-desktop-up {
+            content: "";
+            display: block;
+            width: 2px;
+            height: 24px;
+            background-color: #f1f1f1;
+            position: absolute;
+            top: 20px;
+            right: -33px;
+           
+        }
+      }
+
+    img {
+      margin-right: 24px;
+    }
+
+    h5 {
+      color: $grey-700;
+      margin-bottom: 6px;
+    }
+
+    span {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      color: $secondary-800;
+    }
+  }
+}
