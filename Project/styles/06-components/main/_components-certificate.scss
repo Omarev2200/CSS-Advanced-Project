@@ -1,0 +1,49 @@
+.c-certificate {
+    margin-bottom: 106px;
+  display: none;
+  @include for-desktop-up {
+    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 59px;
+    &__cart-info {
+      align-self: center;
+
+      &__title {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+
+        img {
+          margin-right: 32px;
+        }
+
+        h3 {
+          color: $grey-700;
+        }
+      }
+      p {
+        color: $grey-700;
+        margin-left: 60px;
+        width: 85%;
+      }
+    }
+    &__img {
+      justify-self: center;
+      position: relative;
+
+      p {
+        width: 100%;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: $grey-700;
+        position: absolute;
+        left: 73%;
+        top: 41%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

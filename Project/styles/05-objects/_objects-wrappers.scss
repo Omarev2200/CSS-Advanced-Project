@@ -1,6 +1,9 @@
 .o-page-wrapper {
     display: grid;
-    grid-template-rows: 72px 1fr 567px;
+    grid-template-rows: 72px 1fr 570px;
+    @include for-desktop-up {
+        grid-template-rows: 72px 1fr 470px;
+    }
 }
 
 .o-page-content-wrapper {
@@ -8,4 +11,11 @@
     // margin: 0 20px 0 20px;
     width: 90%;
     margin: 0 auto;
-}   
+} 
+
+.o-distance-left24px {
+    @include for-desktop-up {
+        padding-left: 24px;
+
+    }
+}

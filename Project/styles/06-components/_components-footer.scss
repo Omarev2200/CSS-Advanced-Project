@@ -1,0 +1,169 @@
+.c-footer {
+    @include for-desktop-up {
+        margin-top: 148px;
+    }
+  .o-page-content-wrapper {
+    position: relative;
+    
+    @include for-desktop-up {
+        p {
+            width: 16%;
+            position: absolute;
+            right: -65px;
+            top: 278%;
+            text-align: left;
+          }
+    }
+  }
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 12px;
+    background-color: #919191;
+  }
+  &--grey {
+    background-color: #565656;
+  }
+
+  section {
+    margin: 0 0 32px 0;
+  }
+
+  &__nav {
+    @include for-desktop-up {
+        height: 0;
+      border: none;
+      section {
+        margin-left: 85px;
+      }
+      display: grid;
+      grid-template-columns: max-content max-content max-content max-content;
+      justify-content: end;
+    }
+
+    .only {
+      @include for-desktop-up {
+        display: grid;
+        grid-template-areas:
+          "test1 test6"
+          "test2 test7"
+          "test3 ."
+          "test4 ."
+          "test5 .";
+
+        .item1 {
+          grid-area: test1;
+        }
+        .item2 {
+          grid-area: test2;
+        }
+        .item3 {
+          grid-area: test3;
+        }
+        .item4 {
+          grid-area: test4;
+        }
+        .item5 {
+          grid-area: test5;
+        }
+        .item6 {
+          grid-area: test6;
+        }
+        .item7 {
+          grid-area: test7;
+        }
+      }
+    }
+
+    .icons {
+      h5 {
+        display: none;
+        @include for-desktop-up {
+          display: block;
+        }
+      }
+      flex: 1;
+
+      ul {
+        display: flex;
+      }
+
+      a {
+        .fa-facebook {
+          width: 29px;
+          height: 29px;
+          background-color: white;
+          border-radius: 50%;
+          text-align: center;
+          color: #565656;
+          &:hover {
+            color: $primary-300;
+        }
+        }
+        &:hover {
+          color: $primary-300;
+        }
+      }
+
+      i {
+        margin-right: 30px;
+        font-size: 30px;
+      }
+    }
+    display: flex;
+    flex-flow: column wrap;
+    height: 481px;
+    padding-top: 52px;
+    border-bottom: 1px solid #696969;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0 0 12px 0;
+    }
+  }
+
+  h5 {
+    color: white;
+    margin: 0 0 16px 0;
+  }
+  a {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #e6e6e6;
+    &:hover {
+      color: $primary-300;
+    }
+  }
+
+  p {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #919191;
+    margin: 32px 0 0 0;
+    padding-bottom: 32px;
+  }
+  @include for-desktop-up {
+    &::after {
+      content: url("/assets/images/Mask\ Group.svg");
+      display: block;
+      position: absolute;
+      left: 75px;
+      top: -80px;
+    }
+  }
+}

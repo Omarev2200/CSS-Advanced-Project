@@ -1,7 +1,5 @@
 .c-description {
-    
   .o-page-content-wrapper {
-    
     @include for-desktop-up {
       display: grid;
       grid-template-columns: 650px 1fr;
@@ -38,7 +36,8 @@
 
   &__cart-info {
     position: relative;
-   
+
+    
     margin-bottom: 74px;
     &__title {
       display: grid;
@@ -54,6 +53,13 @@
     }
     p {
       color: $grey-700;
+      a {
+        color: $secondary-800;
+        text-decoration: underline;;
+      }
+      @include for-desktop-up {
+        margin-left: 55px;
+      }
     }
 
     @include for-desktop-up {
@@ -61,22 +67,47 @@
         display: none;
       }
       margin: 0;
-      width: 65%;
+      width: 83%;
     }
   }
 }
 
 .display-none-mobile {
-    display: none;
-    @include for-desktop-up {
-        display: block;
-        width: 100%;
-      }
+  display: none;
+  @include for-desktop-up {
+    display: block;
+    width: 100%;
+  }
 }
 
 .display-none-desctop {
-    display: block;
+  display: block;
   @include for-desktop-up {
     display: none;
+  }
+}
+
+.dotted {
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    border: 10px dotted #ffecb3;
+    border-style: none none dotted;
+    bottom: -40px;
+    width: 100%;
+    position: absolute;
+
+    @include for-desktop-up {
+      content: "";
+    display: block;
+    border: 10px dotted #ffecb3;
+    border-style: none dotted none none;
+    top: 0px;
+    height: 100%;
+    right: -66px;
+    position: absolute;
+    }
+    
   }
 }

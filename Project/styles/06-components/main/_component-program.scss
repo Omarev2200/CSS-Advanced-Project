@@ -1,0 +1,152 @@
+.c-program {
+    margin-bottom: 59px;
+  .o-page-content-wrapper {
+
+    @include for-desktop-up {
+        display: grid;
+        grid-template-columns: 700px 1fr;
+      }
+  }
+
+  position: relative;
+  margin-top: 59px;
+  padding-bottom: 69px;
+  &::before {
+    content: "";
+    display: block;
+    border: 10px dotted white;
+    border-style: none none dotted;
+    width: 100%;
+    top: -5px;
+    left: -5px;
+    position: absolute;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    border: 10px dotted white;
+    border-style: none none dotted;
+    width: 100%;
+    bottom: -5px;
+    left: -5px;
+    position: absolute;
+  }
+
+  &--orange {
+    background-color: #ffcb29;
+  }
+
+  &__lists-training-img {
+    display: none;
+    @include for-desktop-up {
+      display: block;
+      justify-self: center;
+      align-self: flex-end;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 59px;
+
+    img {
+      margin-bottom: 40px;
+      @include for-desktop-up {
+       margin: 0 0 24px 0;
+      }
+    }
+
+    h3 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 36px;
+      color: #565656;
+      width: 80%;
+      margin: 0 16px;
+      @include for-desktop-up {
+       margin-bottom: 24px;
+       margin-left: 31px;
+    }
+    }
+  }
+
+  &__description {
+    margin: 0;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #565656;
+
+    @include for-desktop-up {
+        margin: 0 0 0 63px;  
+    }
+  }
+
+  h5 {
+    color: #565656;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
+  &__classes {
+    @include for-desktop-up {
+        margin: 0 0 0 63px;  
+    }
+    div {
+
+        img {
+            cursor: pointer;
+        }
+      padding-bottom: 69px;
+      // display: flex;
+      // flex-flow: row wrap;
+      // justify-content: space-between;
+      display: grid;
+      grid-template-columns: min-content 1fr min-content;
+
+      align-items: center;
+      background-color: white;
+      padding: 14px 14px 14px 14px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+    }
+
+    p {
+      width: 85%;
+      margin: 0;
+      @include for-desktop-up {
+       width: 100%;
+    }
+    }
+
+    p,
+    span {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      color: #565656;
+    }
+
+    .third {
+      margin-bottom: 45px;
+      @include for-desktop-up {
+        margin-bottom: 0px;
+    }
+    }
+
+    .fourth {
+      margin-bottom: 22px;
+      @include for-desktop-up {
+        margin-bottom: 0px;  
+    }
+    }
+  }
+}
