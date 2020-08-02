@@ -1,0 +1,76 @@
+.c-teachers {
+  position: relative;
+  padding: 48px 0 0 0;
+  &:nth-child(2)::before {
+    content: "";
+    display: block;
+    border: 10px dotted $primary-50;
+    border-style: none none dotted;
+    bottom: 0px;
+    width: 100%;
+    position: absolute;
+  }
+  &__info {
+    margin-bottom: 64px;
+    @include for-desktop-up {
+      display: grid;
+      grid-template-columns: 175px 1fr;
+      
+    }
+
+    &__img {
+      display: grid;
+      grid-template-columns: 1fr;
+      img {
+        justify-self: center;
+        width: 172px;
+        height: 172px;
+        border-radius: 50%;
+        border: 8px solid $primary-300;
+      }
+    }
+    &__description {
+      &__name {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: $primary-300;
+        text-align: center;
+        @include for-desktop-up {
+          margin: 0 0 8px 0;
+          text-align: left;
+        }
+      }
+      &__position {
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: $grey-400;
+        text-align: center;
+        @include for-desktop-up {
+          text-align: left;
+          margin: 0em;
+        }
+      }
+      &__about-teacher {
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: $grey-700;
+      }
+      @include for-desktop-up {
+        margin: 24px 0 0 37px;
+      }
+    }
+  }
+  @include for-desktop-up {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

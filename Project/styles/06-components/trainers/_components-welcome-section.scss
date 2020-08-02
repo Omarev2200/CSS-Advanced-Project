@@ -1,0 +1,44 @@
+.c-welcome-section {
+  background-color: $secondary-600;
+  margin: 0em;
+
+  &__title {
+    h1 {
+      position: relative;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px !important;
+      line-height: 44px;
+      color: $white;
+      text-align: center;
+      margin: 64px 0 0 0;
+      animation: heading;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+    }
+
+    p {
+        position: relative;
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: $white;
+      text-align: center;
+      margin: 24px 20px 64px 20px;
+      width: 85%;
+      animation: content;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+
+      @include for-desktop-up {
+        margin: 24px auto 64px auto;
+        width: 60%;
+      }
+    }
+  }
+}
+
+

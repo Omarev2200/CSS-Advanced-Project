@@ -1292,4 +1292,244 @@ li {
     top: -80px;
   }
 }
+
+.c-welcome-section {
+  background-color: #FFB402;
+  margin: 0em;
+}
+
+.c-welcome-section__title h1 {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px !important;
+  line-height: 44px;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 64px 0 0 0;
+  -webkit-animation: heading;
+          animation: heading;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.c-welcome-section__title p {
+  position: relative;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 24px 20px 64px 20px;
+  width: 85%;
+  -webkit-animation: content;
+          animation: content;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@media (min-width: 1200px) {
+  .c-welcome-section__title p {
+    margin: 24px auto 64px auto;
+    width: 60%;
+  }
+}
+
+.c-teachers {
+  position: relative;
+  padding: 48px 0 0 0;
+}
+
+.c-teachers:nth-child(2)::before {
+  content: "";
+  display: block;
+  border: 10px dotted #DFF4F1;
+  border-style: none none dotted;
+  bottom: 0px;
+  width: 100%;
+  position: absolute;
+}
+
+.c-teachers__info {
+  margin-bottom: 64px;
+}
+
+@media (min-width: 1200px) {
+  .c-teachers__info {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 175px 1fr;
+        grid-template-columns: 175px 1fr;
+  }
+}
+
+.c-teachers__info__img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.c-teachers__info__img img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 172px;
+  height: 172px;
+  border-radius: 50%;
+  border: 8px solid #41bead;
+}
+
+.c-teachers__info__description__name {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #41bead;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .c-teachers__info__description__name {
+    margin: 0 0 8px 0;
+    text-align: left;
+  }
+}
+
+.c-teachers__info__description__position {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #B2B2B2;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .c-teachers__info__description__position {
+    text-align: left;
+    margin: 0em;
+  }
+}
+
+.c-teachers__info__description__about-teacher {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #565656;
+}
+
+@media (min-width: 1200px) {
+  .c-teachers__info__description {
+    margin: 24px 0 0 37px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .c-teachers {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.c-teachers-profile {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.c-teachers-profile__card-img {
+  position: relative;
+  width: 175px;
+  height: 175px;
+}
+
+.c-teachers-profile__card-img .image {
+  width: 100%;
+  border-radius: 50%;
+  border: 8px solid #41bead;
+}
+
+.c-teachers-profile__card-img .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  height: 91%;
+  width: 91%;
+  opacity: 0;
+  -webkit-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
+  background-color: #ff9100;
+}
+
+.c-teachers-profile__card-img .text {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.c-teachers-profile__card-img:hover .overlay {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@-webkit-keyframes heading {
+  0% {
+    top: -150px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes heading {
+  0% {
+    top: -150px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@-webkit-keyframes content {
+  0% {
+    left: -2000px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes content {
+  0% {
+    left: -2000px;
+  }
+  100% {
+    left: 0;
+  }
+}
 /*# sourceMappingURL=stlyles.css.map */

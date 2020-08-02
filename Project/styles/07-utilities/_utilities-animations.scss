@@ -1,0 +1,17 @@
+@keyframes heading {
+    0% {
+      top: -150px;
+    }
+    100% { 
+      top: 0;
+    }
+  }
+
+  @keyframes content {
+    0% {
+      left: -2000px;
+    }
+    100% { 
+      left: 0;
+    }
+  }
