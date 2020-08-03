@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/stlyles.css">
+</head>
+<body>
+    <header class="c-header">
+        <div class="o-page-content-wrapper">
+          <nav class="c-header__navbar">
+              <input type="checkbox" id="check" />
+              <label for="check" class="c-header__navbar__checkbtn">
+                <img src="/assets/icons/menu.svg" alt="menu" />
+              </label>
+              <section class="c-header__navbar__logo">
+                <article class="c-header__navbar__logo__dark-arrow">
+                  <img src="assets/icons/dark-arrow.svg" alt="dark-arrow" />
+                </article>
+                <article class="c-header__navbar__logo__orange-arrow">
+                  <img src="assets/icons/orange-arrow.svg" alt="orange-arrow" />
+                </article>
+                <article class="c-header__navbar__logo__softuni-mobile">
+                  <img src="assets/icons/logo.svg" alt="dark-arrow" />
+                </article>
+                <article class="c-header__navbar__logo__softuni-destop">
+                  <img src="assets/icons/Horizontal-logo.svg" alt="dark-arrow" />
+                </article>
+              </section>  
+              <ul class="c-header__navbar__items">
+                <li class="c-header__navbar__item">
+                  <a href="#">обучения</a>
+                </li>
+                <li class="c-header__navbar__item">
+                  <a href="#">Събития</a>
+                </li>
+                <li class="c-header__navbar__item">
+                  <a href="#">Преподаватели</a>
+                </li>
+                <li class="c-header__navbar__item">
+                  <a href="#">Блог</a>
+                </li>
+                <li class="c-header__navbar__item">
+                  <a href="#">Контакти</a>
+                </li>
+                <li class="c-header__navbar__item__search">
+                  <img src="assets/icons/search.svg" alt="Search" />
+                </li>
+              </ul>
+              <button class="btn btn--secondary">
+                вход
+              </button>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+          <section class="c-map">
+            <img src="/assets/images/Map.svg" alt="">
+          </section>
+          <section class="c-contacts">
+              <div class="o-contacts-container">
+                    <article class="c-contacts__address">
+                <h3>
+                    Адрес:
+                </h3>
+                <p>
+                    София, кв. Изгрев, ул. "Тинтява" 15-17, етаж 1, ПК: 1113
+                </p>
+                    </article>
+                    <article class="c-contacts__contacts">
+                <h3>
+                    Контакти:
+                </h3>
+                <p>
+                    + 359 892 241 199
+                </p>
+                <span>
+                    digital@softuni.bg
+                </span>
+                    </article>
+                    <article class="c-contacts__work-time">
+                <h3>
+                    Работно време:
+                </h3>
+                <div class="c-contacts__work-time__workweek">
+                    <span class="c-contacts__work-time__workweek__period
+                    "">
+                        9:00 - 19:30
+                    </span>
+                    <span>
+                        Понеделник - Петък
+                    </span>
+                </div>
+                <div class="c-contacts__work-time__weekend">
+                    <span class="c-contacts__work-time__weekend__period
+                    ">
+                        8:30 - 18:00
+                    </span>
+                    <span>
+                        Събота и Неделя
+                    </span>
+                </div>
+                    </article>
+                    <button class="btn btn--find-us">намери ни на картата</button>
+              </div>
+             
+            
+          </section>
+          <section class="c-form-write-us">
+            <h3>
+                Пишете ни
+            </h3>
+            <form action="POST">
+                <input type="text" placeholder="Заглавие">
+                <input type="email" placeholder="Имейл адрес">
+                <textarea name="msg" id="msg" placeholder="Съобщение" cols="100" rows="10"></textarea>
+                <button class="btn btn--send">изпрати</button>
+            </form>
+          </section>
+      </main>
+</body>
+</html>
