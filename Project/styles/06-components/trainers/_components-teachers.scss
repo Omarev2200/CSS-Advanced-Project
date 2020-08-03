@@ -27,7 +27,13 @@
         height: 172px;
         border-radius: 50%;
         border: 8px solid $primary-300;
+        transition: all 0.3s ease-in;;
+        &:hover {
+          transform: scale(1.05,1.05) rotate(0)skew(0,0) translate(0,0);
+        }
       }
+
+      
     }
     &__description {
       &__name {

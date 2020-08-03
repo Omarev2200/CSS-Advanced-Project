@@ -1,49 +1,97 @@
 .c-teachers-profile {
+  padding-top: 64px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+
+  justify-self: center;
+  @include for-phone-only {
+    .for-mobile {
+    display: block;
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    justify-self: center;
+    margin-bottom: 46px;
+  }
+  }
+  
+  @include for-desktop-up {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    justify-self: center;
- 
-&__card {
-    &-img {
-        position: relative;
-        width: 175px;
-        height: 175px;
+    grid-row-gap: 64px;
+    grid-column-gap: 91px;
+    justify-items: center;
+  }
 
-        .image {
-            width: 100%;
-            border-radius: 50%;
-            border: 8px solid $primary-300;
-          }
-
-          .overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
-            height: 91%;
-            width: 91%;
-            opacity: 0;
-            transition: 0.8s ease-out;
-            background-color: $secondary-800;
-          }
-
-          .text {
-            font-size: 20px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-          }
-
-          &:hover .overlay {
-            opacity: 0.8;
-            cursor: pointer;
-          }
+  &__card {
+    display: none;
+    @include for-desktop-up {
+      display: block;
+      display: grid;
+    grid-template-rows: min-content min-content min-content;
+    justify-items: center;
     }
-}
-    
-  
+    &__name {
+      margin: 0 0 8px 0;
+      justify-self: center;
+      font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: $primary-300;
+        text-align: center;
+    }
+
+    &__position {
+      text-align: center;
+    }
+
+    &-img {
+      position: relative;
+      width: 175px;
+      height: 175px;
+       margin: 0 0 24px 0;
+      justify-self: center;
+
+      .image {
+        width: 100%;
+        border-radius: 50%;
+        border: 8px solid $primary-300;
+        
+      }
+      transition: all 0.5s ease-out;
+        &:hover {
+          transform: scale(1.05,1.05) rotate(0)skew(0,0) translate(0,0);
+        }
+
+      .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        height: 91%;
+        width: 91%;
+        opacity: 0;
+        transition: 0.5s ease-out;
+        background-color: $secondary-800;
+      }
+
+      .text {
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      &:hover .overlay {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+    }
+  }
 }

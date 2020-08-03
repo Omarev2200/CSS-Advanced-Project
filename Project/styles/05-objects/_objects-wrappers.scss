@@ -2,7 +2,7 @@
     display: grid;
     grid-template-rows: 72px 1fr 570px;
     @include for-desktop-up {
-        grid-template-rows: 72px 1fr 470px;
+        grid-template-rows: 72px 1fr 323px;
     }
 }
 
