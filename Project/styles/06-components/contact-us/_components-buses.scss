@@ -1,0 +1,31 @@
+.c-buses {
+    background-color: $secondary-50;
+    padding: 71px 0 80px 0;
+    .o-page-content-wrapper {
+        display: grid;
+        grid-template-rows: max-content 1fr;
+        grid-row-gap: 23px;
+
+        .buses-wrapper-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 33px;
+            
+        }
+    }
+
+    &__title {
+        justify-self: center;
+        color: $primary-300;
+    }
+    &__info {
+        &__label {
+            color: $primary-300;
+        }
+
+        &__navigation {
+            color: $grey-700;
+        }
+    }
+
+}

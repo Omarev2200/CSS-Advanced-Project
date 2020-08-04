@@ -1,10 +1,10 @@
-@import "./01-settings/_settings-typography";
 @import "./01-settings/_settings-colors";
 @import "./01-settings/_settings-breakpoints";
 
 @import "./03-generic/_generic-fonts";
 @import "./03-generic/generic-normalize";
 
+@import "./04-elements/settings-typography";
 @import "./04-elements/_elements-links";
 @import "./04-elements/_elements-list-items";
 
@@ -26,6 +26,7 @@
 @import "./06-components/contact-us/components-map";
 @import "./06-components/contact-us/components-contacts";
 @import "./06-components/contact-us/components-form-write-us";
+@import "./06-components/contact-us/components-buses";
 
 @import "./07-utilities/utilities-animations";
 
