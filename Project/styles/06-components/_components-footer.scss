@@ -4,9 +4,9 @@
 
     @include for-desktop-up {
       p {
-        width: 16%;
+        width: 15%;
         position: absolute;
-        right: -65px;
+        right: -4px;
         top: 278%;
         text-align: left;
       }
@@ -33,7 +33,7 @@
       height: 0;
       border: none;
       display: grid;
-      grid-template-columns: max-content max-content max-content max-content;
+      grid-template-columns: 256px 145px 167px 177px;
       grid-column-gap: 85px;
       justify-content: end;
     }
@@ -73,12 +73,6 @@
     }
 
     .icons {
-      h5 {
-        display: none;
-        @include for-desktop-up {
-          display: block;
-        }
-      }
       flex: 1;
 
       ul {
@@ -124,11 +118,12 @@
   }
 
   h5 {
+    font-family: 'lato', sans-serif;
     color: white;
     margin: 0 0 16px 0;
   }
   a {
-    font-family: "Lato";
+    font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -140,7 +135,7 @@
   }
 
   p {
-    font-family: "Lato";
+    font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -157,7 +152,7 @@
       content: url("/assets/images/Mask\ Group.svg");
       display: block;
       position: absolute;
-      left: 75px;
+      left: 25px;
       top: -80px;
     }
   }

@@ -1,11 +1,11 @@
 .c-description {
- 
+  margin-top: 59px;
   .o-page-content-wrapper {
     @include for-desktop-up {
       margin-bottom: 148px;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 79px;
+      grid-template-columns: 1fr min-content;
+      grid-row-gap: 82px;
     }
   }
   &__info {
@@ -43,10 +43,11 @@
     &__title {
       display: grid;
       grid-template-columns: min-content 1fr;
-    }
+      grid-column-gap: 16px;
 
-    img {
-      margin-right: 18px;
+      @include for-desktop-up {
+        grid-column-gap: 32px;
+      }
     }
 
     h2 {
@@ -60,7 +61,8 @@
         
       }
       @include for-desktop-up {
-        margin-left: 55px;
+        margin-left: 66px;
+        width: 482px;
       }
     }
 
@@ -92,7 +94,7 @@
     border-style: none dotted none none;
     top: 0px;
     height: 100%;
-    right: -66px;
+    right:  50px;
     position: absolute;
     }
     

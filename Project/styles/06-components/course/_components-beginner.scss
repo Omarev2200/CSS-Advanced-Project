@@ -1,9 +1,8 @@
 .c-beginner {
   background-color: $blue-400;
   color: $white;
-  width: 100%;
   text-align: center;
-  padding: 64px 0 84px 0;
+  padding: 64px 0 52px 0;
 
   &__info {
     &__label {
@@ -34,8 +33,9 @@
         animation: content;
         animation-duration: 3s;
         animation-fill-mode: forwards;
+        width: 99%;
         @include for-desktop-up {
-          width: 46%;
+          width: 41%;
           margin: 0 auto;
         }
       }

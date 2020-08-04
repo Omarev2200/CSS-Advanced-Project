@@ -1,6 +1,6 @@
 html,
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 a,
@@ -35,15 +35,18 @@ h6,
 .h2-like,
 .h3-like,
 .h4-like {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1,
 .h1-like {
   font-style: normal;
   font-weight: bold;
-  line-height: 44px;
-  font-size: 36px;
+  font-size: 30px;
+  line-height: 36px;
+  @include for-desktop-up {
+    line-height: 44px;
+  }
 }
 
 h2,
@@ -68,4 +71,12 @@ h4,
   font-style: normal;
   font-weight: 600;
   line-height: 25px;
+}
+
+h5,
+.h5-like {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
 }

@@ -23,7 +23,7 @@
         position: absolute;
         height: 100%;
         width: 65px;
-        left: 250px;
+        left: 239px;
         top: 0;
         background: radial-gradient(
             circle 12px,
@@ -80,8 +80,8 @@
             height: 24px;
             background-color: #f1f1f1;
             position: absolute;
-            top: 20px;
-            right: -33px;
+            top: 16px;
+            right: -32px;
            
         }
       }
@@ -93,6 +93,7 @@
     h5 {
       color: $grey-700;
       margin-bottom: 6px;
+      margin: 0;
     }
 
     span {
