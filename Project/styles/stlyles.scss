@@ -1,34 +1,44 @@
 @import "./01-settings/_settings-colors";
+@import "./01-settings/settings-animations";
 @import "./01-settings/_settings-breakpoints";
+@import "./01-settings/settings-shadows";
 
 @import "./03-generic/_generic-fonts";
 @import "./03-generic/generic-normalize";
 
-@import "./04-elements/settings-typography";
+@import "./04-elements/_elements-typography";
 @import "./04-elements/_elements-links";
 @import "./04-elements/_elements-list-items";
+@import "./04-elements/_elements-input-fields";
 
 @import "./05-objects/objects-wrappers";
+@import "./05-objects/objects-content-wrapper";
 
 @import "./06-components/components-navigation";
 @import "./06-components/components-buttons";
-@import "./06-components/main/components-main";
-@import "./06-components/main/components-beginner";
-@import "./06-components/main/components-enrollment";
-@import "./06-components/main/components-description";
-@import "./06-components/main/component-program";
-@import "./06-components/main/components-certificate";
+
+
+@import "./06-components/course/_components-beginner";
+@import "./06-components/course/_components-enrollment";
+@import "./06-components/course/_components-description";
+@import "./06-components/course/_component-program";
+@import "./06-components/course/_components-certificate";
+
 @import "./06-components/components-footer";
+
 @import "./06-components/trainers/components-welcome-section";
 @import "./06-components/trainers/components-teachers";
 @import "./06-components/trainers/components-teachers-profile";
 @import "./06-components/trainers/components-form";
+
 @import "./06-components/contact-us/components-map";
 @import "./06-components/contact-us/components-contacts";
 @import "./06-components/contact-us/components-form-write-us";
 @import "./06-components/contact-us/components-buses";
 
-@import "./07-utilities/utilities-animations";
+@import "./07-utilities/utilities-underline";
+@import "./07-utilities/utilities-hidden";
+
 
 
 

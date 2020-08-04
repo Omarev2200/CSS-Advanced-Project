@@ -1,18 +1,15 @@
 .c-footer {
-    @include for-desktop-up {
-       
-    }
   .o-page-content-wrapper {
     position: relative;
-    
+
     @include for-desktop-up {
-        p {
-            width: 16%;
-            position: absolute;
-            right: -65px;
-            top: 278%;
-            text-align: left;
-          }
+      p {
+        width: 16%;
+        position: absolute;
+        right: -65px;
+        top: 278%;
+        text-align: left;
+      }
     }
   }
   position: relative;
@@ -33,13 +30,11 @@
 
   &__nav {
     @include for-desktop-up {
-        height: 0;
+      height: 0;
       border: none;
-      section {
-        margin-left: 85px;
-      }
       display: grid;
       grid-template-columns: max-content max-content max-content max-content;
+      grid-column-gap: 85px;
       justify-content: end;
     }
 
@@ -47,32 +42,32 @@
       @include for-desktop-up {
         display: grid;
         grid-template-areas:
-          "test1 test6"
-          "test2 test7"
-          "test3 ."
-          "test4 ."
-          "test5 .";
+          "item1 item6"
+          "item2 item7"
+          "item3 ."
+          "item4 ."
+          "item5 .";
 
         .item1 {
-          grid-area: test1;
+          grid-area: item1;
         }
         .item2 {
-          grid-area: test2;
+          grid-area: item2;
         }
         .item3 {
-          grid-area: test3;
+          grid-area: item3;
         }
         .item4 {
-          grid-area: test4;
+          grid-area: item4;
         }
         .item5 {
-          grid-area: test5;
+          grid-area: item5;
         }
         .item6 {
-          grid-area: test6;
+          grid-area: item6;
         }
         .item7 {
-          grid-area: test7;
+          grid-area: item7;
         }
       }
     }
@@ -100,7 +95,7 @@
           color: #565656;
           &:hover {
             color: $primary-300;
-        }
+          }
         }
         &:hover {
           color: $primary-300;

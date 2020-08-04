@@ -2,11 +2,12 @@
   background-color: $blue-400;
   color: $white;
   width: 100%;
-  min-height: 302px;
   text-align: center;
+  padding: 64px 0 84px 0;
 
   &__info {
     &__label {
+      position: relative;
       font-family: "Lato", sans-serif;
       font-style: normal;
       font-weight: bold;
@@ -19,17 +20,22 @@
       border-radius: 4px;
       text-transform: uppercase;
       color: $white;
-      margin-top: 64px;
+      animation: heading;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
     }
 
     &__title {
-      max-width: 80%;
       margin: 28px auto;
 
       p {
+        position: relative;
         margin: 0;
+        animation: content;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
         @include for-desktop-up {
-          width: 52%;
+          width: 46%;
           margin: 0 auto;
         }
       }

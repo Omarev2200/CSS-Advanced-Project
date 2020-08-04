@@ -1,0 +1,15 @@
+.u-hidden-for-mobile {
+    display: none !important;
+
+    @include for-desktop-up  {
+        display: grid !important;
+    }
+}
+
+.u-hidden-for-desctop {
+    display: block !important;
+
+    @include for-desktop-up  {
+        display: none !important;
+    }
+}

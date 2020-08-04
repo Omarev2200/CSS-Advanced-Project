@@ -1,8 +1,6 @@
 .c-certificate {
     margin-bottom: 106px;
-  display: none;
   @include for-desktop-up {
-    display: block;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 59px;

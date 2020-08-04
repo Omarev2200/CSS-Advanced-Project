@@ -1,0 +1,8 @@
+input {
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 52px;
+  &::placeholder {
+    padding: 16px 16px; 
+  }
+}
