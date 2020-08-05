@@ -7,21 +7,29 @@
   justify-self: center;
   @include for-phone-only {
     .for-mobile {
-    display: block;
-    display: grid;
-    grid-template-rows: min-content min-content min-content;
-    justify-self: center;
-    margin-bottom: 46px;
+      display: block;
+      display: grid;
+      grid-template-rows: min-content min-content min-content;
+      justify-self: center;
+      margin-bottom: 46px;
+    }
   }
+
+  @include for-tablet-landscape-up {
+    grid-template-columns: max-content max-content;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  grid-column-gap: 100px;
   }
-  
+
   @include for-desktop-up {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: max-content max-content max-content max-content;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-row-gap: 64px;
-    grid-column-gap: 91px;
-    justify-items: center;
+    grid-column-gap: 76px;
+    justify-content: center;
+    margin-bottom: 128px;
   }
 
   &__card {
@@ -29,19 +37,14 @@
     @include for-desktop-up {
       display: block;
       display: grid;
-    grid-template-rows: min-content min-content min-content;
-    justify-items: center;
+      grid-template-rows: min-content min-content min-content;
+      justify-items: center;
     }
     &__name {
       margin: 0 0 8px 0;
       justify-self: center;
-      font-family: "Montserrat", sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 24px;
-        color: $primary-300;
-        text-align: center;
+      color: $primary-300;
+      text-align: center;
     }
 
     &__position {
@@ -52,19 +55,18 @@
       position: relative;
       width: 175px;
       height: 175px;
-       margin: 0 0 24px 0;
+      margin: 0 0 24px 0;
       justify-self: center;
 
       .image {
         width: 100%;
         border-radius: 50%;
         border: 8px solid $primary-300;
-        
       }
       transition: all 0.5s ease-out;
-        &:hover {
-          transform: scale(1.05,1.05) rotate(0)skew(0,0) translate(0,0);
-        }
+      &:hover {
+        transform: scale(1.05, 1.05) rotate(0) skew(0, 0) translate(0, 0);
+      }
 
       .overlay {
         position: absolute;

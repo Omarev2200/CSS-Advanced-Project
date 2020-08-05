@@ -6,13 +6,12 @@
   background-color: $secondary-800;
   color: $white;
   text-transform: uppercase;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
   &:hover {
-    color: white;
-    background-color: $primary-300;
+    transform: scale(1.05, 1.05) rotate(0) skew(0, 0) translate(0, 0);
     cursor: pointer;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-      0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: $shadow
   }
 
   &--secondary {
@@ -20,9 +19,6 @@
     height: 36px;
     margin: 18px 0;
     align-self: center;
-    font-family: "Lato", sans-serif;
-    font-style: normal;
-    font-weight: 800;
     font-size: 13px;
     line-height: 16px;
     padding: 10px 22px;
@@ -39,10 +35,6 @@
 
   &--enrollment {
     position: relative;
-    font-family: "Lato", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 16px;
     line-height: 20px;
     color: $white;
     background: $secondary-800;
@@ -58,10 +50,6 @@
   }
   &--form {
     padding: 14px 129px;
-    font-family: "Lato", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 16px;
     line-height: 20px;
     margin: 10px 0 64px 0;
 
@@ -72,14 +60,10 @@
   }
 
   &--find-us {
-    font-family: "Lato", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 16px;
     line-height: 20px;
     background-color: $white;
     box-shadow: $shadow-1dp;
-    border: 1px solid #ff9100;
+    border: 1px solid $secondary-800;
     box-sizing: border-box;
     border-radius: 100px;
     grid-row: 3 / 4;

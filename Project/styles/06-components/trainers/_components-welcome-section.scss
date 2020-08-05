@@ -4,6 +4,8 @@
 
   &__title {
     h1 {
+      font-weight: 600;
+      line-height: 44px;
       margin: 0em;
       position: relative;
       color: $white;
@@ -19,7 +21,7 @@
       margin: 0 auto;
       text-align: center;
       margin: 24px 0px 0px 0px;
-     
+
       animation: content;
       animation-duration: 3s;
       animation-fill-mode: forwards;

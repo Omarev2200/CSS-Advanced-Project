@@ -8,31 +8,30 @@
   top: 274px;
   box-shadow: $shadow-1dp;
   border-radius: 12px;
+
+  @include for-phone-only {
+    left: 37px;
+  }
   .o-contacts-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr min-content min-content;
     grid-row-gap: 14px;
     grid-column-gap: 24px;
+    @include for-phone-only {
+     display: flex;
+     flex-flow: column wrap;
+     text-align: center;
+    }
   }
 
-  h3 {
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
+  h4 {
     color: $primary-300;
     margin: 0 0 18px 0;
   }
 
   p {
-    font-family: "Lato", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: #565656;
+    color: $grey-700;
     width: 100%;
   }
 
@@ -79,5 +78,9 @@
 
     
 
+  }
+
+  @include for-phone-only {
+    width: 300px;
   }
 }

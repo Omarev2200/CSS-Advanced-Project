@@ -23,14 +23,14 @@
     color: $white;
     margin: 64px 0 0 0;
     justify-self: center;
+    @include for-desktop-up {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+    }
   }
 
   &__description {
-    font-family: "Lato", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
     color: $white;
     margin: 24px 0 64px 0;
     width: 90%;
@@ -49,22 +49,26 @@
     grid-row-gap: 36px;
 
     @include for-desktop-up {
-        margin: 0 0 128px 0;
-        display: grid;
-        grid-template-columns: 228px 228px 228px min-content;
-        grid-template-rows: min-content;
-        justify-content: center;
-        grid-column-gap: 32px;
+      margin: 0 0 128px 0;
+      display: grid;
+      grid-template-columns: 228px 228px 228px min-content;
+      grid-template-rows: min-content;
+      justify-content: center;
+      grid-column-gap: 32px;
     }
 
     input {
       width: 100%;
-      background: #66b9f8;
-      border: 1px solid #ffffff;
+      background: $blue-300;
+      border: 1px solid $white;
       color: $white;
       &::placeholder {
         color: $white;
-        
+      }
+      &:focus {
+        outline: none !important;
+        border-color: $white;
+        box-shadow: 0 0 10px $white;
       }
 
       @include for-desktop-up {

@@ -14,7 +14,7 @@
   &::before {
     content: "";
     display: block;
-    border: 10px dotted white;
+    border: 10px dotted $white;
     border-style: none none dotted;
     width: 100%;
     top: -5px;
@@ -25,7 +25,7 @@
   &::after {
     content: "";
     display: block;
-    border: 10px dotted white;
+    border: 10px dotted $white;
     border-style: none none dotted;
     width: 100%;
     bottom: -5px;
@@ -34,7 +34,7 @@
   }
 
   &--orange {
-    background-color: #ffcb29;
+    background-color: $secondary-900;
   }
 
   &__lists-training-img {
@@ -71,12 +71,7 @@
 
   &__description {
     margin: 0;
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: #565656;
+    color: $grey-700;
 
     @include for-desktop-up {
         margin: 0 0 0 63px;  
@@ -84,7 +79,7 @@
   }
 
   h5 {
-    color: #565656;
+    color: $grey-700;
     margin-top: 32px;
     margin-bottom: 16px;
   }
@@ -99,9 +94,6 @@
             cursor: pointer;
         }
       padding-bottom: 69px;
-      // display: flex;
-      // flex-flow: row wrap;
-      // justify-content: space-between;
       display: grid;
       grid-template-columns: min-content 1fr min-content;
 
@@ -122,12 +114,12 @@
 
     p,
     span {
-      font-family: "Lato";
+      font-family: "Lato", sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 18px;
       line-height: 22px;
-      color: #565656;
+      color: $grey-700;
     }
 
     .third {

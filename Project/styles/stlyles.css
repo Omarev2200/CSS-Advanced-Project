@@ -308,7 +308,7 @@ html,
 a,
 button {
   font-style: normal;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 16px;
 }
 
@@ -344,7 +344,7 @@ h1,
 .h1-like {
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 36px;
   line-height: 36px;
 }
 
@@ -376,7 +376,7 @@ h4,
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 25px;
+  line-height: 24px;
 }
 
 h5,
@@ -494,7 +494,7 @@ input::placeholder {
 .c-header__navbar__items {
   position: fixed;
   width: 100%;
-  height: 50%;
+  height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffcfc), to(#ff9100));
   background: linear-gradient(180deg, #fffcfc 46%, #ff9100 100%);
   top: 55px;
@@ -522,7 +522,7 @@ input::placeholder {
 @media (min-width: 1200px) {
   .c-header__navbar__items {
     position: relative;
-    top: 0;
+    top: -16px;
     left: 0;
     background: none;
     display: -ms-grid;
@@ -610,13 +610,13 @@ input::placeholder {
   background-color: #ff9100;
   color: #FFFFFF;
   text-transform: uppercase;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
-  color: white;
-  background-color: #41bead;
+  -webkit-transform: scale(1.05, 1.05) rotate(0) skew(0, 0) translate(0, 0);
+          transform: scale(1.05, 1.05) rotate(0) skew(0, 0) translate(0, 0);
   cursor: pointer;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
@@ -628,9 +628,6 @@ input::placeholder {
   margin: 18px 0;
   -ms-flex-item-align: center;
       align-self: center;
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 800;
   font-size: 13px;
   line-height: 16px;
   padding: 10px 22px;
@@ -653,10 +650,6 @@ input::placeholder {
 
 .btn--enrollment {
   position: relative;
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
   background: #ff9100;
@@ -676,10 +669,6 @@ input::placeholder {
 
 .btn--form {
   padding: 14px 129px;
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
   line-height: 20px;
   margin: 10px 0 64px 0;
 }
@@ -692,10 +681,6 @@ input::placeholder {
 }
 
 .btn--find-us {
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
   line-height: 20px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
@@ -859,7 +844,7 @@ input::placeholder {
   height: 2px;
   background-color: #f1f1f1;
   position: absolute;
-  top: 75px;
+  top: 74px;
 }
 
 @media (min-width: 1200px) {
@@ -895,7 +880,7 @@ input::placeholder {
 }
 
 .c-description {
-  margin-top: 59px;
+  margin-top: -11px;
 }
 
 @media (min-width: 1200px) {
@@ -1043,7 +1028,7 @@ input::placeholder {
 .c-program::before {
   content: "";
   display: block;
-  border: 10px dotted white;
+  border: 10px dotted #FFFFFF;
   border-style: none none dotted;
   width: 100%;
   top: -5px;
@@ -1054,7 +1039,7 @@ input::placeholder {
 .c-program::after {
   content: "";
   display: block;
-  border: 10px dotted white;
+  border: 10px dotted #FFFFFF;
   border-style: none none dotted;
   width: 100%;
   bottom: -5px;
@@ -1116,11 +1101,6 @@ input::placeholder {
 
 .c-program__description {
   margin: 0;
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
   color: #565656;
 }
 
@@ -1175,7 +1155,7 @@ input::placeholder {
 
 .c-program__classes p,
 .c-program__classes span {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -1254,11 +1234,7 @@ input::placeholder {
   }
   .c-certificate__img p {
     width: 100%;
-    font-family: "Lato", sans-serif;
-    font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
     color: #565656;
     position: absolute;
     left: 73%;
@@ -1299,7 +1275,7 @@ input::placeholder {
 }
 
 .c-footer section {
-  margin: 0 0 32px 0;
+  margin: 0 0 20px 0;
 }
 
 .c-footer__nav {
@@ -1469,6 +1445,8 @@ input::placeholder {
 }
 
 .c-welcome-section__title h1 {
+  font-weight: 600;
+  line-height: 44px;
   margin: 0em;
   position: relative;
   color: #FFFFFF;
@@ -1507,14 +1485,27 @@ input::placeholder {
   padding: 48px 0 0 0;
 }
 
+@media (min-width: 1200px) {
+  .c-teachers {
+    margin-top: 96px;
+    padding: 0em;
+  }
+}
+
 .c-teachers:nth-child(2)::before {
   content: "";
   display: block;
   border: 10px dotted #DFF4F1;
   border-style: none none dotted;
-  bottom: 0;
+  bottom: -74px;
   width: 100%;
   position: absolute;
+}
+
+@media (min-width: 1200px) {
+  .c-teachers:nth-child(2)::before {
+    bottom: 0px;
+  }
 }
 
 .c-teachers__info {
@@ -1554,13 +1545,9 @@ input::placeholder {
 }
 
 .c-teachers__info__description__name {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
   color: #41bead;
   text-align: center;
+  margin: 32px 0 8px 0;
 }
 
 @media (min-width: 1200px) {
@@ -1571,6 +1558,7 @@ input::placeholder {
 }
 
 .c-teachers__info__description__position {
+  margin: 0 0 24px 0;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1588,17 +1576,13 @@ input::placeholder {
 }
 
 .c-teachers__info__description__about-teacher {
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
   color: #565656;
 }
 
 @media (min-width: 1200px) {
   .c-teachers__info__description {
     margin: 24px 0 0 37px;
+    width: 98%;
   }
 }
 
@@ -1624,7 +1608,7 @@ input::placeholder {
       justify-self: center;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 375px) {
   .c-teachers-profile .for-mobile {
     display: block;
     display: -ms-grid;
@@ -1638,17 +1622,35 @@ input::placeholder {
   }
 }
 
+@media (min-width: 900px) {
+  .c-teachers-profile {
+    -ms-grid-columns: max-content max-content;
+        grid-template-columns: -webkit-max-content -webkit-max-content;
+        grid-template-columns: max-content max-content;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-column-gap: 100px;
+  }
+}
+
 @media (min-width: 1200px) {
   .c-teachers-profile {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: max-content max-content max-content max-content;
+        grid-template-columns: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
+        grid-template-columns: max-content max-content max-content max-content;
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-row-gap: 64px;
-    grid-column-gap: 91px;
-    justify-items: center;
+    grid-column-gap: 76px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 128px;
   }
 }
 
@@ -1672,11 +1674,6 @@ input::placeholder {
   margin: 0 0 8px 0;
   -ms-grid-column-align: center;
       justify-self: center;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
   color: #41bead;
   text-align: center;
 }
@@ -1771,12 +1768,15 @@ input::placeholder {
       justify-self: center;
 }
 
+@media (min-width: 1200px) {
+  .c-form__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
 .c-form__description {
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
   color: #FFFFFF;
   margin: 24px 0 64px 0;
   width: 90%;
@@ -1821,8 +1821,8 @@ input::placeholder {
 
 .c-form form input {
   width: 100%;
-  background: #66b9f8;
-  border: 1px solid #ffffff;
+  background: #66B9F8;
+  border: 1px solid #FFFFFF;
   color: #FFFFFF;
 }
 
@@ -1842,6 +1842,13 @@ input::placeholder {
   color: #FFFFFF;
 }
 
+.c-form form input:focus {
+  outline: none !important;
+  border-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 10px #FFFFFF;
+          box-shadow: 0 0 10px #FFFFFF;
+}
+
 @media (min-width: 1200px) {
   .c-form form input {
     width: 228px;
@@ -1851,6 +1858,12 @@ input::placeholder {
 .c-map img {
   width: 100%;
   height: auto;
+}
+
+@media (min-width: 375px) {
+  .c-map {
+    width: 375px;
+  }
 }
 
 .c-contacts {
@@ -1867,6 +1880,12 @@ input::placeholder {
   border-radius: 12px;
 }
 
+@media (min-width: 375px) {
+  .c-contacts {
+    left: 37px;
+  }
+}
+
 .c-contacts .o-contacts-container {
   display: -ms-grid;
   display: grid;
@@ -1879,22 +1898,25 @@ input::placeholder {
   grid-column-gap: 24px;
 }
 
-.c-contacts h3 {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
+@media (min-width: 375px) {
+  .c-contacts .o-contacts-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    text-align: center;
+  }
+}
+
+.c-contacts h4 {
   color: #41bead;
   margin: 0 0 18px 0;
 }
 
 .c-contacts p {
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
   color: #565656;
   width: 100%;
 }
@@ -1943,6 +1965,12 @@ input::placeholder {
 
 .c-contacts__work-time__weekend__period {
   color: #ff9100 !important;
+}
+
+@media (min-width: 375px) {
+  .c-contacts {
+    width: 300px;
+  }
 }
 
 .c-form-write-us {
@@ -2022,18 +2050,22 @@ input::placeholder {
 
 .c-form-write-us form textarea::-webkit-input-placeholder {
   color: #919191;
+  padding: 16px 16px;
 }
 
 .c-form-write-us form textarea:-ms-input-placeholder {
   color: #919191;
+  padding: 16px 16px;
 }
 
 .c-form-write-us form textarea::-ms-input-placeholder {
   color: #919191;
+  padding: 16px 16px;
 }
 
 .c-form-write-us form textarea::placeholder {
   color: #919191;
+  padding: 16px 16px;
 }
 
 .c-buses {
