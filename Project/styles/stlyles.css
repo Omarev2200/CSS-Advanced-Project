@@ -536,12 +536,31 @@ input::placeholder {
 }
 
 .c-header__navbar__item a {
+  position: relative;
   color: #565656;
 }
 
 .c-header__navbar__item a:hover {
   cursor: pointer;
   color: #ff9100;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.c-header__navbar__item a::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 3px;
+  background-color: #ff9100;
+  -webkit-transition: width  .5s;
+  transition: width  .5s;
+}
+
+.c-header__navbar__item a:hover::after {
+  width: 100%;
+  -webkit-transition: width  .5s;
+  transition: width  .5s;
 }
 
 @media (min-width: 1200px) {
