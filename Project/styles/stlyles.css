@@ -620,7 +620,7 @@ input::placeholder {
   }
 }
 
-.btn {
+.c-btn {
   -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
   border-radius: 100px;
@@ -633,7 +633,7 @@ input::placeholder {
   transition: all 0.3s ease-in-out;
 }
 
-.btn:hover {
+.c-btn:hover {
   -webkit-transform: scale(1.1, 1.1) rotate(0) skew(0, 0) translate(0, 0);
           transform: scale(1.1, 1.1) rotate(0) skew(0, 0) translate(0, 0);
   cursor: pointer;
@@ -641,7 +641,7 @@ input::placeholder {
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
-.btn--secondary {
+.c-btn--secondary {
   width: 82px;
   height: 36px;
   margin: 18px 0;
@@ -661,13 +661,13 @@ input::placeholder {
 }
 
 @media (min-width: 1200px) {
-  .btn--secondary {
+  .c-btn--secondary {
     margin-right: 0;
     margin-left: 32px;
   }
 }
 
-.btn--enrollment {
+.c-btn--enrollment {
   position: relative;
   line-height: 20px;
   color: #FFFFFF;
@@ -680,26 +680,26 @@ input::placeholder {
 }
 
 @media (min-width: 1200px) {
-  .btn--enrollment {
+  .c-btn--enrollment {
     padding: 14px 32px;
     margin: 32px 137px 32px 64px;
   }
 }
 
-.btn--form {
+.c-btn--form {
   padding: 14px 129px;
   line-height: 20px;
   margin: 10px 0 64px 0;
 }
 
 @media (min-width: 1200px) {
-  .btn--form {
+  .c-btn--form {
     padding: 14px 32px;
     margin: 0 0 0 16px;
   }
 }
 
-.btn--find-us {
+.c-btn--find-us {
   line-height: 20px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
@@ -722,7 +722,7 @@ input::placeholder {
   padding: 14px 32px;
 }
 
-.btn--send {
+.c-btn--send {
   -ms-grid-column-align: start;
       justify-self: start;
   -ms-flex-item-align: center;
@@ -734,10 +734,14 @@ input::placeholder {
 }
 
 .c-beginner {
-  background-color: #44a9f8;
   color: #FFFFFF;
   text-align: center;
   padding: 64px 0 52px 0;
+}
+
+.c-beginner--blue {
+  height: 302px;
+  background-color: #44a9f8;
 }
 
 .c-beginner__info__label {
@@ -781,7 +785,7 @@ input::placeholder {
 
 @media (min-width: 1200px) {
   .c-beginner__info__title p {
-    width: 41%;
+    width: 49%;
     margin: 0 auto;
   }
 }
@@ -813,14 +817,7 @@ input::placeholder {
 
 @media (min-width: 1200px) {
   .c-enrollment::after {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 100%;
-    width: 65px;
-    left: 239px;
-    top: 0;
-    background: radial-gradient(circle 12px, transparent, transparent 30%, #c4c4c4 50%, #fff 60%, #fff 100%) 47px -7px/20px 18px repeat-y;
+    background: none;
   }
 }
 
@@ -828,13 +825,62 @@ input::placeholder {
   .c-enrollment {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: max-content max-content max-content max-content max-content;
-        grid-template-columns: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
-        grid-template-columns: max-content max-content max-content max-content max-content;
+    -ms-grid-columns: max-content  max-content max-content max-content max-content;
+        grid-template-columns: -webkit-max-content  -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
+        grid-template-columns: max-content  max-content max-content max-content max-content;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.c-enrollment__ellipses {
+  position: absolute;
+  height: 100%;
+  width: 12px;
+  top: -6px;
+  left: 300px;
+}
+
+.c-enrollment__ellipses div {
+  position: absolute;
+  background: #ffffff;
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 120px;
+  left: -3px;
+}
+
+.c-enrollment__ellipse {
+  background-color: #44a9f8;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-bottom: 7px;
+  -webkit-box-shadow: inset 0px 2px 3px 1px #C4C4C4;
+          box-shadow: inset 0px 2px 3px 1px #C4C4C4;
+}
+
+.c-enrollment__ellipse span {
+  height: 6px;
+  width: 12px;
+  display: block;
+  background: white;
+  border-radius: 0 0 6px 6px;
+  padding-top: -7px;
+  position: absolute;
+  bottom: 43px;
+}
+
+.c-enrollment__ellipse--white {
+  background-color: white;
+}
+
+.c-enrollment__ellipse:first-child {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .c-enrollment__item {
@@ -1035,6 +1081,10 @@ input::placeholder {
   padding-bottom: 69px;
 }
 
+.c-program--orange {
+  background-color: #ffcb29;
+}
+
 @media (min-width: 1200px) {
   .c-program .o-page-content-wrapper {
     display: -ms-grid;
@@ -1064,10 +1114,6 @@ input::placeholder {
   bottom: -5px;
   left: -5px;
   position: absolute;
-}
-
-.c-program--orange {
-  background-color: #ffcb29;
 }
 
 .c-program__lists-training-img {
@@ -1305,7 +1351,7 @@ input::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  height: 481px;
+  height: 448px;
   padding-top: 52px;
   border-bottom: 1px solid #696969;
 }
@@ -1366,12 +1412,6 @@ input::placeholder {
     -ms-grid-column: 2;
     grid-area: item7;
   }
-}
-
-.c-footer__nav .icons {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 
 .c-footer__nav .icons ul {
@@ -1495,7 +1535,7 @@ input::placeholder {
 @media (min-width: 1200px) {
   .c-welcome-section__title p {
     margin: 24px auto;
-    width: 62%;
+    width: 66%;
   }
 }
 
@@ -1879,12 +1919,6 @@ input::placeholder {
   height: auto;
 }
 
-@media (min-width: 375px) {
-  .c-map {
-    width: 375px;
-  }
-}
-
 .c-contacts {
   width: 520px;
   height: auto;
@@ -1899,12 +1933,6 @@ input::placeholder {
   border-radius: 12px;
 }
 
-@media (min-width: 375px) {
-  .c-contacts {
-    left: 37px;
-  }
-}
-
 .c-contacts .o-contacts-container {
   display: -ms-grid;
   display: grid;
@@ -1915,19 +1943,6 @@ input::placeholder {
       grid-template-rows: 1fr min-content min-content;
   grid-row-gap: 14px;
   grid-column-gap: 24px;
-}
-
-@media (min-width: 375px) {
-  .c-contacts .o-contacts-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    text-align: center;
-  }
 }
 
 .c-contacts h4 {
@@ -1984,12 +1999,6 @@ input::placeholder {
 
 .c-contacts__work-time__weekend__period {
   color: #ff9100 !important;
-}
-
-@media (min-width: 375px) {
-  .c-contacts {
-    width: 300px;
-  }
 }
 
 .c-form-write-us {
@@ -2088,8 +2097,11 @@ input::placeholder {
 }
 
 .c-buses {
-  background-color: #FFF8E1;
   padding: 71px 0 80px 0;
+}
+
+.c-buses--background-color {
+  background-color: #FFF8E1;
 }
 
 .c-buses .o-page-content-wrapper {

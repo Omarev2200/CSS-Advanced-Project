@@ -9,20 +9,17 @@
   box-shadow: $shadow-1dp;
   border-radius: 12px;
 
-  @include for-phone-only {
-    left: 37px;
-  }
   .o-contacts-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr min-content min-content;
     grid-row-gap: 14px;
     grid-column-gap: 24px;
-    @include for-phone-only {
-     display: flex;
-     flex-flow: column wrap;
-     text-align: center;
-    }
+    // @include for-phone-only {
+    //  display: flex;
+    //  flex-flow: column wrap;
+    //  text-align: center;
+    // }
   }
 
   h4 {
@@ -78,9 +75,5 @@
 
     
 
-  }
-
-  @include for-phone-only {
-    width: 300px;
   }
 }

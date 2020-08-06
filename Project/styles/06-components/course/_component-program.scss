@@ -1,11 +1,13 @@
 .c-program {
-    margin-bottom: 59px;
+  &--orange {
+    background-color: $secondary-900;
+  }
+  margin-bottom: 59px;
   .o-page-content-wrapper {
-
     @include for-desktop-up {
-        display: grid;
-        grid-template-columns: 700px 1fr;
-      }
+      display: grid;
+      grid-template-columns: 700px 1fr;
+    }
   }
 
   position: relative;
@@ -33,10 +35,6 @@
     position: absolute;
   }
 
-  &--orange {
-    background-color: $secondary-900;
-  }
-
   &__lists-training-img {
     display: none;
     @include for-desktop-up {
@@ -54,7 +52,7 @@
     img {
       margin-bottom: 40px;
       @include for-desktop-up {
-       margin: 0 0 24px 0;
+        margin: 0 0 24px 0;
       }
     }
 
@@ -63,9 +61,9 @@
       width: 80%;
       margin: 0 16px;
       @include for-desktop-up {
-       margin-bottom: 24px;
-       margin-left: 31px;
-    }
+        margin-bottom: 24px;
+        margin-left: 31px;
+      }
     }
   }
 
@@ -74,7 +72,7 @@
     color: $grey-700;
 
     @include for-desktop-up {
-        margin: 0 0 0 63px;  
+      margin: 0 0 0 63px;
     }
   }
 
@@ -86,13 +84,12 @@
 
   &__classes {
     @include for-desktop-up {
-        margin: 0 0 0 63px;  
+      margin: 0 0 0 63px;
     }
     div {
-
-        img {
-            cursor: pointer;
-        }
+      img {
+        cursor: pointer;
+      }
       padding-bottom: 69px;
       display: grid;
       grid-template-columns: min-content 1fr min-content;
@@ -108,8 +105,8 @@
       width: 85%;
       margin: 0;
       @include for-desktop-up {
-       width: 100%;
-    }
+        width: 100%;
+      }
     }
 
     p,
@@ -126,14 +123,14 @@
       margin-bottom: 45px;
       @include for-desktop-up {
         margin-bottom: 0px;
-    }
+      }
     }
 
     .fourth {
       margin-bottom: 22px;
       @include for-desktop-up {
-        margin-bottom: 0px;  
-    }
+        margin-bottom: 0px;
+      }
     }
   }
 }

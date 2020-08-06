@@ -1,5 +1,8 @@
 .c-beginner {
-  background-color: $blue-400;
+  &--blue {
+    height: 302px;
+    background-color: $blue-400;
+  }
   color: $white;
   text-align: center;
   padding: 64px 0 52px 0;
@@ -35,7 +38,7 @@
         animation-fill-mode: forwards;
         width: 99%;
         @include for-desktop-up {
-          width: 41%;
+          width: 49%;
           margin: 0 auto;
         }
       }

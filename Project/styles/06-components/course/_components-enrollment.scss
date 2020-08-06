@@ -1,5 +1,4 @@
 .c-enrollment {
-   
   &::after {
     content: "";
     display: block;
@@ -18,73 +17,100 @@
     top: 134px;
 
     @include for-desktop-up {
-        content: "";
-        display: block;
-        position: absolute;
-        height: 100%;
-        width: 65px;
-        left: 239px;
-        top: 0;
-        background: radial-gradient(
-            circle 12px,
-            transparent,
-            transparent 30%,
-            #c4c4c4 50%,
-            #fff 60%,
-            #fff 100%
-          )
-          47px -7px/20px 18px repeat-y;
+      background: none;
     }
   }
-  
+
   display: grid;
   grid-template-columns: 1fr;
 
   box-shadow: $shadow-1dp;
   border-radius: 12px;
-  grid-template-rows: repeat(5,auto);
+  grid-template-rows: repeat(5, auto);
   position: relative;
   top: -57px;
   background-color: $white;
 
   @include for-desktop-up {
-      display: grid;
-      grid-template-columns: max-content max-content max-content max-content max-content;
-      align-items: center;
+    display: grid;
+    grid-template-columns: max-content  max-content max-content max-content max-content;
+    align-items: center;
+  }
+
+  &__ellipses {
+    position: absolute;
+    height: 100%;
+    width: 12px;
+    top: -6px;
+    left: 300px;
+
+    div {
+      position: absolute;
+      background: #ffffff;
+      display: block;
+      width: 20px;
+      height: 20px;
+      top: 120px;
+      left: -3px;
+    }
+    
+  }
+  &__ellipse {
+    background-color: $blue-400;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-bottom: 7px;
+    box-shadow: inset 0px 2px 3px 1px #C4C4C4;
+    span {
+      height: 6px;
+      width: 12px;
+      display: block;
+      background: white;
+      border-radius: 0 0 6px 6px;
+      padding-top: -7px;
+      position: absolute;
+      bottom: 43px;
+    }
+    &--white {
+      background-color: white;
+    }
+  }
+  &__ellipse:first-child {
+    box-shadow: none;
   }
 
   &__item {
     @include for-desktop-up {
-        margin: 0 60px 0 0;
+      margin: 0 60px 0 0;
     }
-      position: relative;
+    position: relative;
     display: grid;
     grid-template-columns: min-content 1fr;
     align-items: center;
     margin: 0 0 50px 24px;
 
-   
     &:not(:last-child):after {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: #f1f1f1;
+      position: absolute;
+      top: 74px;
+
+      @include for-desktop-up {
         content: "";
         display: block;
-        width: 24px;
-        height: 2px;
+        width: 2px;
+        height: 24px;
         background-color: #f1f1f1;
         position: absolute;
-        top: 74px;
-        
-        @include for-desktop-up {
-            content: "";
-            display: block;
-            width: 2px;
-            height: 24px;
-            background-color: #f1f1f1;
-            position: absolute;
-            top: 16px;
-            right: -32px;
-           
-        }
+        top: 16px;
+        right: -32px;
       }
+    }
 
     img {
       margin-right: 24px;
