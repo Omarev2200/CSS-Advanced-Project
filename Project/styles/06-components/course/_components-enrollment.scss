@@ -30,10 +30,15 @@
   position: relative;
   top: -57px;
   background-color: $white;
-
+  @include for-tablet-landscape-up {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+  }
   @include for-desktop-up {
     display: grid;
     grid-template-columns: max-content  max-content max-content max-content max-content;
+    grid-template-rows:1fr;
     align-items: center;
   }
 
