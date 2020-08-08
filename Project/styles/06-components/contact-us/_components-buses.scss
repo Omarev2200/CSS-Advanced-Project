@@ -1,4 +1,8 @@
 .c-buses {
+  margin-top: 60px;
+  @include for-desktop-up {
+    margin: 0;
+   }
   &--background-color {
     background-color: $secondary-50;
   }
@@ -10,8 +14,14 @@
 
     .buses-wrapper-content {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
       grid-column-gap: 33px;
+      @include for-desktop-up {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 33px;
+       }
+     
     }
   }
 
