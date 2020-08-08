@@ -15,14 +15,10 @@
   }
 
   &--secondary {
+    @include button(center, 13px, 16px, center, end);
     margin: 18px 0;
-    align-self: center;
-    font-size: 13px;
-    line-height: 16px;
     padding: 10px 22px;
     display: flex;
-    justify-content: center;
-    justify-self: end;
     margin-right: 24px;
 
     @include for-desktop-up {
@@ -37,7 +33,6 @@
     color: $white;
     background: $secondary-800;
     box-shadow: $shadow-4dp;
-    border-radius: 100px;
     padding: 16px 85px;
     margin: 46px 24px 82px 24px;
     @include for-tablet-landscape-up {
@@ -61,12 +56,12 @@
   }
 
   &--find-us {
+   
     line-height: 20px;
     background-color: $white;
     box-shadow: $shadow-1dp;
     border: 1px solid $secondary-800;
     box-sizing: border-box;
-    border-radius: 100px;
     margin-top: 18px;
     color: $secondary-800;
     padding: 14px 32px;

@@ -1,13 +1,13 @@
 .o-page-content-wrapper {
-    // margin: 0 20px 0 20px;
-    width: 89.33333333333333%;
+  // margin: 0 20px 0 20px;
+  width: 89.33333333333333%;
+  margin: 0 auto;
+  @include for-desktop-up {
+    width: 89.58333333333333%;
     margin: 0 auto;
-    @include for-desktop-up {
-      width: 89.58333333333333%;
-      margin: 0 auto;
-    }
   }
+}
 
-  .o-contacts-container {
-    padding: 32px 32px;
-  }
+.o-contacts-container {
+  padding: 32px 32px;
+}

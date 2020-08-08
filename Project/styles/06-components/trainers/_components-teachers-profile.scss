@@ -17,9 +17,9 @@
 
   @include for-tablet-landscape-up {
     grid-template-columns: max-content max-content;
-  grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  grid-column-gap: 100px;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    grid-column-gap: 100px;
   }
 
   @include for-desktop-up {

@@ -1,0 +1,8 @@
+@mixin  button ($center, $font-size, $line-height, $justify-content, $justify-self) {
+    align-self: #{$center};
+    font-size: #{$font-size};
+    line-height: #{$line-height};
+    justify-content: #{$justify-content};
+    justify-self: #{$justify-self};
+    
+}

@@ -1,7 +1,7 @@
 .c-footer {
   .o-page-content-wrapper {
     position: relative;
-     
+
     @include for-desktop-up {
       p {
         width: 15%;
@@ -35,14 +35,14 @@
 
     @include for-tablet-portrait-up {
       display: grid;
-      grid-template-columns:1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       justify-items: center;
       height: 330px;
     }
 
     @include for-tablet-landscape-up {
       display: grid;
-      grid-template-columns:1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       justify-items: center;
       height: -330px;
     }

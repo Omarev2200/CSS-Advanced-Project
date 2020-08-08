@@ -54,7 +54,7 @@
 }
 
 @font-face {
-  font-family: 'Lato';
+  font-family: "Lato";
   src: url("../../assets/fonts/latoregular.woff2") format("woff2"), url("../../assets/fonts/latoregular.woff") format("woff");
 }
 
@@ -87,7 +87,7 @@ Use a more readable tab size (opinionated).
 2. Prevent adjustments of font size after orientation changes in iOS.
 */
 html {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -550,22 +550,22 @@ input::placeholder {
 .c-header__navbar__item a:hover {
   cursor: pointer;
   color: #ff9100;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .c-header__navbar__item a::after {
   width: 0%;
   height: 3px;
   background-color: #ff9100;
-  -webkit-transition: width  .5s;
-  transition: width  .5s;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
 }
 
 .c-header__navbar__item a:hover::after {
   width: 100%;
-  -webkit-transition: width  .5s;
-  transition: width  .5s;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
 }
 
 @media (min-width: 1200px) {
@@ -632,7 +632,7 @@ input::placeholder {
   border: none;
   outline: none;
   background-color: #ff9100;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -647,19 +647,19 @@ input::placeholder {
 }
 
 .c-btn--secondary {
-  margin: 18px 0;
   -ms-flex-item-align: center;
       align-self: center;
   font-size: 13px;
   line-height: 16px;
-  padding: 10px 22px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   justify-self: end;
+  margin: 18px 0;
+  padding: 10px 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-right: 24px;
 }
 
@@ -673,11 +673,10 @@ input::placeholder {
 .c-btn--enrollment {
   position: relative;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   background: #ff9100;
   -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-  border-radius: 100px;
   padding: 16px 85px;
   margin: 46px 24px 82px 24px;
 }
@@ -713,13 +712,12 @@ input::placeholder {
 
 .c-btn--find-us {
   line-height: 20px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   border: 1px solid #ff9100;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 100px;
   margin-top: 18px;
   color: #ff9100;
   padding: 14px 32px;
@@ -892,7 +890,7 @@ input::placeholder {
 .c-footer__nav .icons a .fa-facebook {
   width: 29px;
   height: 29px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 50%;
   text-align: center;
   color: #565656;
@@ -922,7 +920,7 @@ input::placeholder {
 
 .c-footer h5 {
   font-family: "lato", sans-serif;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0 0 16px 0;
 }
 
@@ -932,7 +930,7 @@ input::placeholder {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  color: #E6E6E6;
+  color: #e6e6e6;
 }
 
 .c-footer a:hover {
@@ -986,7 +984,7 @@ input::placeholder {
 }
 
 .c-beginner {
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   padding: 64px 0 52px 0;
 }
@@ -1004,13 +1002,13 @@ input::placeholder {
   font-size: 12px;
   line-height: 14px;
   display: inline-block;
-  background-color: #FFC20A;
+  background-color: #ffc20a;
   padding: 4px 8px;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-animation: heading;
           animation: heading;
   -webkit-animation-duration: 3s;
@@ -1054,7 +1052,7 @@ input::placeholder {
       grid-template-rows: repeat(5, auto);
   position: relative;
   top: -57px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .c-enrollment::after {
@@ -1083,9 +1081,9 @@ input::placeholder {
   .c-enrollment {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: max-content  max-content max-content max-content max-content;
-        grid-template-columns: -webkit-max-content  -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
-        grid-template-columns: max-content  max-content max-content max-content max-content;
+    -ms-grid-columns: max-content max-content max-content max-content max-content;
+        grid-template-columns: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
+        grid-template-columns: max-content max-content max-content max-content max-content;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     -webkit-box-align: center;
@@ -1104,7 +1102,7 @@ input::placeholder {
 
 .c-enrollment__ellipses div {
   position: absolute;
-  background: #FFFFFF;
+  background: #ffffff;
   display: block;
   width: 20px;
   height: 20px;
@@ -1119,15 +1117,15 @@ input::placeholder {
   height: 12px;
   border-radius: 50%;
   margin-bottom: 7px;
-  -webkit-box-shadow: inset 0px 2px 3px 1px #C4C4C4;
-          box-shadow: inset 0px 2px 3px 1px #C4C4C4;
+  -webkit-box-shadow: inset 0px 2px 3px 1px #c4c4c4;
+          box-shadow: inset 0px 2px 3px 1px #c4c4c4;
 }
 
 .c-enrollment__ellipse span {
   height: 6px;
   width: 12px;
   display: block;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 0 0 6px 6px;
   padding-top: -7px;
   position: absolute;
@@ -1135,7 +1133,7 @@ input::placeholder {
 }
 
 .c-enrollment__ellipse--white {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .c-enrollment__ellipse:first-child {
@@ -1340,14 +1338,14 @@ input::placeholder {
 }
 
 .c-program::before {
-  border: 10px dotted #FFFFFF;
+  border: 10px dotted #ffffff;
   border-style: none none dotted;
   top: -5px;
   left: -5px;
 }
 
 .c-program::after {
-  border: 10px dotted #FFFFFF;
+  border: 10px dotted #ffffff;
   border-style: none none dotted;
   bottom: -5px;
   left: -5px;
@@ -1434,7 +1432,7 @@ input::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 14px 14px 14px 14px;
   border-radius: 6px;
   margin-bottom: 16px;
@@ -1547,7 +1545,7 @@ input::placeholder {
 }
 
 .c-welcome-section {
-  background-color: #FFB402;
+  background-color: #ffb402;
   padding: 64px 0;
 }
 
@@ -1556,7 +1554,7 @@ input::placeholder {
   line-height: 44px;
   margin: 0em;
   position: relative;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   -webkit-animation: heading;
           animation: heading;
@@ -1568,7 +1566,7 @@ input::placeholder {
 
 .c-welcome-section__title p {
   position: relative;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0 auto;
   text-align: center;
   margin: 24px 0px 0px 0px;
@@ -1600,7 +1598,7 @@ input::placeholder {
 }
 
 .c-teachers:nth-child(2)::before {
-  border: 10px dotted #DFF4F1;
+  border: 10px dotted #dff4f1;
   border-style: none none dotted;
   bottom: -74px;
 }
@@ -1667,7 +1665,7 @@ input::placeholder {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: #B2B2B2;
+  color: #b2b2b2;
   text-align: center;
 }
 
@@ -1840,12 +1838,12 @@ input::placeholder {
 .c-form {
   margin-top: 50px;
   position: relative;
-  background-color: #66B9F8;
+  background-color: #66b9f8;
 }
 
 .c-form::before {
   height: 12px;
-  background-color: #92CDFB;
+  background-color: #92cdfb;
 }
 
 .c-form .o-page-content-wrapper {
@@ -1860,7 +1858,7 @@ input::placeholder {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 64px 0 0 0;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -1875,7 +1873,7 @@ input::placeholder {
 }
 
 .c-form__description {
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 24px 0 64px 0;
   width: 90%;
 }
@@ -1919,32 +1917,32 @@ input::placeholder {
 
 .c-form form input {
   width: 100%;
-  background: #66B9F8;
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF;
+  background: #66b9f8;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
 .c-form form input::-webkit-input-placeholder {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .c-form form input:-ms-input-placeholder {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .c-form form input::-ms-input-placeholder {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .c-form form input::placeholder {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .c-form form input:focus {
   outline: none !important;
-  border-color: #FFFFFF;
-  -webkit-box-shadow: 0 0 10px #FFFFFF;
-          box-shadow: 0 0 10px #FFFFFF;
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 10px #ffffff;
+          box-shadow: 0 0 10px #ffffff;
 }
 
 @media (min-width: 1200px) {
@@ -1966,12 +1964,12 @@ input::placeholder {
 .c-contacts {
   min-width: 300px;
   height: auto;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   position: absolute;
-  z-index: 22;
+  z-index: 0;
   top: 180px;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -2082,7 +2080,7 @@ input::placeholder {
     position: absolute;
     display: -ms-grid;
     display: grid;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     left: 335px;
     top: 274px;
     -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
@@ -2249,7 +2247,7 @@ input::placeholder {
 }
 
 .c-buses--background-color {
-  background-color: #FFF8E1;
+  background-color: #fff8e1;
 }
 
 .c-buses .o-page-content-wrapper {

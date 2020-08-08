@@ -43,7 +43,6 @@
       align-items: center;
       justify-content: space-evenly;
       z-index: 1;
-     
 
       @include for-desktop-up {
         position: relative;
@@ -63,20 +62,18 @@
         &:hover {
           cursor: pointer;
           color: $secondary-800;
-          transition: .5s;
+          transition: 0.5s;
         }
         &::after {
           @extend %pseudo;
           width: 0%;
           height: 3px;
           background-color: $secondary-800;
-          transition: width  .5s;
-          
-
+          transition: width 0.5s;
         }
         &:hover::after {
           width: 100%;
-          transition: width  .5s;
+          transition: width 0.5s;
         }
       }
       @include for-desktop-up {
@@ -105,9 +102,7 @@
       align-items: center;
 
       &__orange-arrow {
-        
         @include for-desktop-up {
-       
           margin-right: 16px;
         }
       }

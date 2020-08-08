@@ -34,8 +34,8 @@
   }
   @include for-desktop-up {
     display: grid;
-    grid-template-columns: max-content  max-content max-content max-content max-content;
-    grid-template-rows:1fr;
+    grid-template-columns: max-content max-content max-content max-content max-content;
+    grid-template-rows: 1fr;
     align-items: center;
   }
 
@@ -55,7 +55,6 @@
       top: 120px;
       left: -3px;
     }
-    
   }
   &__ellipse {
     background-color: $blue-400;
