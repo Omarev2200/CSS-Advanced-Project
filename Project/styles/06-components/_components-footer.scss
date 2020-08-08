@@ -1,7 +1,7 @@
 .c-footer {
   .o-page-content-wrapper {
     position: relative;
-
+     
     @include for-desktop-up {
       p {
         width: 15%;
@@ -33,6 +33,19 @@
     padding-top: 52px;
     border-bottom: 1px solid $grey-600;
 
+    @include for-tablet-portrait-up {
+      display: grid;
+      grid-template-columns:1fr 1fr 1fr 1fr;
+      justify-items: center;
+      height: 330px;
+    }
+
+    @include for-tablet-landscape-up {
+      display: grid;
+      grid-template-columns:1fr 1fr 1fr 1fr;
+      justify-items: center;
+      height: -330px;
+    }
     @include for-desktop-up {
       height: 0;
       border: none;
@@ -143,6 +156,16 @@
     color: $grey-500;
     margin: 32px 0 0 0;
     padding-bottom: 32px;
+
+    @include for-tablet-portrait-up {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    @include for-tablet-landscape-up {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
   }
   @include for-desktop-up {
     &::after {
