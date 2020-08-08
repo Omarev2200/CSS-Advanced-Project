@@ -59,15 +59,14 @@
     &__item {
       a {
         position: relative;
-        color: #565656;
+        color: $grey-700;
         &:hover {
           cursor: pointer;
           color: $secondary-800;
           transition: .5s;
         }
         &::after {
-          content: '';
-          display: block;
+          @extend %pseudo;
           width: 0%;
           height: 3px;
           background-color: $secondary-800;

@@ -14,25 +14,21 @@
   margin-top: 59px;
   padding-bottom: 69px;
   &::before {
-    content: "";
-    display: block;
+    @extend %pseudo;
     border: 10px dotted $white;
     border-style: none none dotted;
-    width: 100%;
     top: -5px;
     left: -5px;
-    position: absolute;
+    
   }
 
   &::after {
-    content: "";
-    display: block;
+    @extend %pseudo;
     border: 10px dotted $white;
     border-style: none none dotted;
-    width: 100%;
     bottom: -5px;
     left: -5px;
-    position: absolute;
+    
   }
 
   &__lists-training-img {
@@ -57,7 +53,7 @@
     }
 
     h2 {
-      color: #565656;
+      color: $grey-700;
       width: 80%;
       margin: 0 16px;
       @include for-desktop-up {
@@ -96,7 +92,7 @@
       grid-template-columns: min-content 1fr min-content;
 
       align-items: center;
-      background-color: white;
+      background-color: $white;
       padding: 14px 14px 14px 14px;
       border-radius: 6px;
       margin-bottom: 16px;

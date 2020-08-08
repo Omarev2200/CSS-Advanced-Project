@@ -2,9 +2,7 @@
   margin-top: 50px;
   position: relative;
   &::before {
-    content: "";
-    display: block;
-    width: 100%;
+    @extend %pseudo;
     height: 12px;
     background-color: $blue-200;
   }
@@ -15,8 +13,6 @@
   background-color: $blue-300;
 
   &__title {
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;

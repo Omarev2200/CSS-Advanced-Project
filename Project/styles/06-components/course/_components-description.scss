@@ -79,23 +79,16 @@
 .dotted {
   position: relative;
   &::before {
-    content: "";
-    display: block;
-    border: 10px dotted #ffecb3;
+    @extend %pseudo;
+    border: 10px dotted $secondary-100;
     border-style: none none dotted;
     bottom: -40px;
-    width: 100%;
-    position: absolute;
 
     @include for-desktop-up {
-      content: "";
-    display: block;
-    border: 10px dotted #ffecb3;
     border-style: none dotted none none;
     top: 0px;
     height: 100%;
     right:  50px;
-    position: absolute;
     }
     
   }

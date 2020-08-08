@@ -4,6 +4,12 @@
   display: grid;
   grid-template-columns: 1fr;
 
+  @media (max-width: 375px) {
+    display: grid;
+    grid-template-columns: 340px;
+    grid-template-rows: max-content max-content;
+  }
+
   &__title {
     justify-self: center;
     color: $primary-300;
@@ -14,6 +20,10 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content 1fr min-content;
     grid-gap: 32px;
+    @media (max-width: 375px) {
+      display: flex;
+      flex-flow: column;
+    }
 
     input,
     textarea {

@@ -1,10 +1,7 @@
 .c-enrollment {
   &::after {
-    content: "";
-    display: block;
-    position: absolute;
+    @extend %pseudo;
     height: 20px;
-    width: 100%;
     background: radial-gradient(
         circle 12px,
         transparent,
@@ -51,7 +48,7 @@
 
     div {
       position: absolute;
-      background: #ffffff;
+      background: $white;
       display: block;
       width: 20px;
       height: 20px;
@@ -67,19 +64,19 @@
     height: 12px;
     border-radius: 50%;
     margin-bottom: 7px;
-    box-shadow: inset 0px 2px 3px 1px #C4C4C4;
+    box-shadow: $ellipse-shadow;
     span {
       height: 6px;
       width: 12px;
       display: block;
-      background: white;
+      background: $white;
       border-radius: 0 0 6px 6px;
       padding-top: -7px;
       position: absolute;
       bottom: 43px;
     }
     &--white {
-      background-color: white;
+      background-color: $white;
     }
   }
   &__ellipse:first-child {
@@ -97,21 +94,15 @@
     margin: 0 0 50px 24px;
 
     &:not(:last-child):after {
-      content: "";
-      display: block;
+      @extend %pseudo;
       width: 24px;
       height: 2px;
-      background-color: #f1f1f1;
-      position: absolute;
+      background-color: $grey-100;
       top: 74px;
 
       @include for-desktop-up {
-        content: "";
-        display: block;
         width: 2px;
         height: 24px;
-        background-color: #f1f1f1;
-        position: absolute;
         top: 16px;
         right: -32px;
       }

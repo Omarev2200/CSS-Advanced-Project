@@ -2,6 +2,7 @@
 @import "./01-settings/settings-animations";
 @import "./01-settings/_settings-breakpoints";
 @import "./01-settings/settings-shadows";
+@import "./01-settings/settings-placeholders";
 
 @import "./03-generic/_generic-fonts";
 @import "./03-generic/generic-normalize";
@@ -16,6 +17,7 @@
 
 @import "./06-components/components-navigation";
 @import "./06-components/components-buttons";
+@import "./06-components/components-footer";
 
 
 @import "./06-components/course/_components-beginner";
@@ -24,7 +26,6 @@
 @import "./06-components/course/_component-program";
 @import "./06-components/course/_components-certificate";
 
-@import "./06-components/components-footer";
 
 @import "./06-components/trainers/components-welcome-section";
 @import "./06-components/trainers/components-teachers";

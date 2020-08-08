@@ -1,4 +1,5 @@
 .c-contacts {
+ 
   width: 520px;
   height: auto;
   position: absolute;
@@ -8,6 +9,11 @@
   top: 274px;
   box-shadow: $shadow-1dp;
   border-radius: 12px;
+  @media (max-width: 375px) {
+    width: 340px;
+    left: 17px;
+    top: 165px;
+  }
 
   .o-contacts-container {
     display: grid;
@@ -15,11 +21,9 @@
     grid-template-rows: 1fr min-content min-content;
     grid-row-gap: 14px;
     grid-column-gap: 24px;
-    // @include for-phone-only {
-    //  display: flex;
-    //  flex-flow: column wrap;
-    //  text-align: center;
-    // }
+    @include for-phone-only {
+      display: grid;
+    }
   }
 
   h4 {
@@ -62,7 +66,7 @@
       grid-template-columns: 1fr 1fr;
       &__period {
         color: $secondary-800 !important;
-    }
+      }
     }
 
     &__weekend {
@@ -70,10 +74,7 @@
       grid-template-columns: 1fr 1fr;
       &__period {
         color: $secondary-800 !important;
+      }
     }
-    }
-
-    
-
   }
 }

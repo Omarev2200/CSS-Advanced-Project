@@ -6,13 +6,10 @@
    padding: 0em;
   }
   &:nth-child(2)::before {
-    content: "";
-    display: block;
+    @extend %pseudo;
     border: 10px dotted $primary-50;
     border-style: none none dotted;
     bottom: -74px;
-    width: 100%;
-    position: absolute;
     @include for-desktop-up {
       bottom: 0px;
     }
