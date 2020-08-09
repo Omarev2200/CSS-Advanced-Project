@@ -550,8 +550,6 @@ input::placeholder {
 .c-header__navbar__item a:hover {
   cursor: pointer;
   color: #ff9100;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .c-header__navbar__item a::after {
@@ -564,8 +562,6 @@ input::placeholder {
 
 .c-header__navbar__item a:hover::after {
   width: 100%;
-  -webkit-transition: width 0.5s;
-  transition: width 0.5s;
 }
 
 @media (min-width: 1200px) {
@@ -925,16 +921,21 @@ input::placeholder {
 }
 
 .c-footer a {
+  position: relative;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
   color: #e6e6e6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .c-footer a:hover {
   color: #41bead;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .c-footer p {
@@ -1022,6 +1023,7 @@ input::placeholder {
 }
 
 .c-beginner__info__title p {
+  font-size: 30px;
   position: relative;
   margin: 0;
   -webkit-animation: content;
